@@ -35,6 +35,7 @@
 
   environment.systemPackages = with pkgs; [
     curl
+    tealdeer
     tree
   ];
 
@@ -57,6 +58,7 @@
         lla = "ls -lhA";
       };
     };
+    htop.enable = true;
     neovim = {
       enable = true;
       defaultEditor = true;
